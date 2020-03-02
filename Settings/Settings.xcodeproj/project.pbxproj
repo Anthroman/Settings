@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6D547A72240D7D0F0005F35A /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D547A71240D7D0F0005F35A /* Setting.swift */; };
 		6D547A74240D7DDA0005F35A /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D547A73240D7DDA0005F35A /* SettingController.swift */; };
+		6DE2EFBB240D905A005C8749 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2EFBA240D905A005C8749 /* SettingTableViewCell.swift */; };
+		6DE2EFBE240D9098005C8749 /* SettingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2EFBD240D9098005C8749 /* SettingListTableViewController.swift */; };
 		FB160A7023F756B80092DB05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160A6F23F756B80092DB05 /* AppDelegate.swift */; };
 		FB160A7223F756B80092DB05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160A7123F756B80092DB05 /* SceneDelegate.swift */; };
 		FB160A7723F756B80092DB05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB160A7523F756B80092DB05 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		6D547A71240D7D0F0005F35A /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		6D547A73240D7DDA0005F35A /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		6DE2EFBA240D905A005C8749 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		6DE2EFBD240D9098005C8749 /* SettingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListTableViewController.swift; sourceTree = "<group>"; };
 		FB160A6C23F756B80092DB05 /* Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB160A6F23F756B80092DB05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB160A7123F756B80092DB05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 		6D382DB3240D7CA000E13C39 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6DE2EFBC240D9068005C8749 /* View Controllers */,
 				6D547A75240D7F110005F35A /* Model Controller */,
 			);
 			path = Controllers;
@@ -73,6 +78,23 @@
 				6D547A73240D7DDA0005F35A /* SettingController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		6DE2EFB9240D9030005C8749 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2EFBA240D905A005C8749 /* SettingTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		6DE2EFBC240D9068005C8749 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2EFBD240D9098005C8749 /* SettingListTableViewController.swift */,
+				6DE2EFB9240D9030005C8749 /* Custom Views */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		FB160A6323F756B80092DB05 = {
@@ -173,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE2EFBE240D9098005C8749 /* SettingListTableViewController.swift in Sources */,
 				6D547A74240D7DDA0005F35A /* SettingController.swift in Sources */,
+				6DE2EFBB240D905A005C8749 /* SettingTableViewCell.swift in Sources */,
 				FB160A7023F756B80092DB05 /* AppDelegate.swift in Sources */,
 				FB160A7223F756B80092DB05 /* SceneDelegate.swift in Sources */,
 				6D547A72240D7D0F0005F35A /* Setting.swift in Sources */,
