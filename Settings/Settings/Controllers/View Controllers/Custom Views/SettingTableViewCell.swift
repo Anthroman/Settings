@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol SettingTableViewCellDelegate: class {
+    //Step one
+    func settingSwitchTapped(for cell: SettingTableViewCell)
+}
+
 class SettingTableViewCell: UITableViewCell {
 
     //MARK: - Outlets
@@ -15,10 +20,14 @@ class SettingTableViewCell: UITableViewCell {
     @IBOutlet weak var settingNameLabel: UILabel!
     @IBOutlet weak var settingSwitch: UISwitch!
     
+    //MARK: - Properties
+    //Step 2
+    var delegate: SettingTableViewCellDelegate?
+    
     //MARK: - Actions
     
     @IBAction func settingSwitchToggled(_ sender: Any) {
-        //TOTO: - Add this
+        delegate?.settingSwitchTapped(for: self)
     }
     
     //MARK: - Helper Methods

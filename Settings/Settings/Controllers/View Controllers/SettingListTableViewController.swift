@@ -12,7 +12,6 @@ class SettingListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     // MARK: - Table view data source
@@ -27,7 +26,18 @@ class SettingListTableViewController: UITableViewController {
         
         let setting = SettingController.settings[indexPath.row]
         cell.updateViews(with: setting)
+        cell.delegate = self
         
         return cell
     }
 }// End of class
+
+extension SettingListTableViewController: SettingTableViewCellDelegate {
+    func settingSwitchTapped(for cell: SettingTableViewCell) {
+        // TBVC -> ModelController to update the isOn -> Tell cell to update itself
+        guard let indexPath = tableView.indexPath(for: cell) else {return}
+        let setting = SettingController.settings[indexPath.row]
+        SettingController.toggleIsOn(for: setting)
+        cell.updateViews(with: setting)
+    }
+}
